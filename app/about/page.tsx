@@ -1,0 +1,9 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = { title: 'About' }
+
+const skills = ['React & Next.js', 'TypeScript', 'Accessible HTML & CSS', 'Tailwind CSS', 'REST APIs', 'Responsive design', 'Git & GitHub', 'Performance-minded UI']
+
+export default function AboutPage() {
+  return <main className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-24"><div className="max-w-3xl"><p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">About me</p><h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">I care about the details that make software feel human.</h1><p className="mt-6 text-lg leading-8 text-slate-600">I am a frontend developer who enjoys turning complicated requirements into calm, practical experiences. My work balances visual craft, accessible interaction, and maintainable implementation.</p></div><section className="mt-14 grid gap-8 lg:grid-cols-[1.2fr_.8fr]"><div className="rounded-2xl bg-slate-950 p-7 text-slate-200 sm:p-10"><h2 className="text-2xl font-bold text-white">A thoughtful build process</h2><p className="mt-5 leading-7">I start by understanding the people and task behind a feature, then make the interface clear at every viewport. I value honest feedback, small iterations, and code that the next developer can confidently extend.</p><p className="mt-5 leading-7">Projects such as QueueWise and Meal Planner let me explore how better information design can reduce friction in everyday decisions.</p></div><div className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm sm:p-10"><h2 className="text-2xl font-bold text-slate-950">Core skills</h2><ul className="mt-5 space-y-3">{skills.map((skill) => <li className="flex gap-3 text-slate-600" key={skill}><span aria-hidden="true" className="mt-2 h-2 w-2 shrink-0 rounded-full bg-teal-600" />{skill}</li>)}</ul></div></section></main>
+}

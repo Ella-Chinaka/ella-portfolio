@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-ink: #102a43;
+  --color-paper: #f7fafc;
+  --color-accent: #0f766e;
+  --color-accent-soft: #ccfbf1;
+}
+
+:root { --background: #f7fafc; --foreground: #102a43; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { min-width: 320px; margin: 0; background: var(--background); color: var(--foreground); font-family: Arial, Helvetica, sans-serif; }
+.field { width: 100%; border: 1px solid #cbd5e1; border-radius: .5rem; padding: .75rem; color: #0f172a; outline: none; }
+.field:focus { border-color: #0f766e; box-shadow: 0 0 0 3px #ccfbf1; }
